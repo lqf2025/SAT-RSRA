@@ -1,8 +1,9 @@
 1. System Requirements
+
 Software Dependencies:
 
 
-To run this software, you will need Python 3.12.7 and the following Python libraries:
+To run this, you will need Python 3.12.7 and the following Python libraries:
 
 NumPy (version 1.24+)
 
@@ -18,7 +19,6 @@ Random (standard Python library, no installation required)
 
 Math (standard Python library, no installation required)
 
-OpenPyXL (version 3.0+)
 
 You can install all dependencies using the following command:
 
@@ -34,8 +34,6 @@ matplotlib>=3.7
 parfor>=1.0
 
 pysat>=0.9
-
-openpyxl>=3.0
 
 
 Operating Systems:
@@ -65,7 +63,6 @@ Parfor (version 2025.1.0)
 
 python-sat  (version 1.8.dev14)
 
-OpenPyXL (version 3.1.5)
 
 While other versions of these libraries may also work, these are the versions the software has been explicitly tested with.
 
@@ -142,7 +139,7 @@ The project folder is organized into five main parts, each corresponding to the 
 
 Each folder contains a Python script with the same name as the folder. Running the script directly produces the corresponding figures using pre-computed data.
 
-The remaining folders contain the evaluation codes and data required for generating these figures.
+The remaining folders contain the evaluation codes and data required for generating these figures, appending the corresponding image location as a suffix. 
 
 generator.py, is used to generate random positive 3-SAT instances, which occurs multiple times. After generation, it applies our reduction algorithm to produce the matrix L.
 
@@ -164,17 +161,17 @@ Determination of the necessary number of layers
 
 Scripts and outputs:
 
-reductionability.py → generates reduction.npz in the reduction folder.
+reductionability.py (folder reduction-Fig2abh)→ generates reduction.npz in the reduction folder.
 
-QAA.py and QAOA.py (in folder QAAQAOA) → simulate QAA- and QAOA-based solvers for case stored in PQC100,63.npz.
+QAA.py and QAOA.py (folder QAAQAOA-Fig2de) → simulate QAA- and QAOA-based solvers for case stored in PQC100,63.npz.
 
-VQE.py and VQEcount.py (in folder VQE) → simulate VQE-based solvers for case stored in PQC150,94.npz.
+VQE.py and VQEcount.py (folder VQE-Fig2c) → simulate VQE-based solvers for case stored in PQC150,94.npz.
 
 VQE.py generates successful and failed attempts.
 
 VQEcount.py calculates the probability of success.
 
-QAAp.py and QAOAp.py (in folder pdeterminate) → evaluate scaling performance under varying numbers of layers.
+QAAp.py and QAOAp.py (folder pdeterminate-Fig2fg) → evaluate scaling performance under varying numbers of layers.
 
 QAAp.py outputs: QAAscale0.npz – QAAscale4.npz
 
@@ -185,6 +182,14 @@ QAOAp.py outputs: results stored in the folder QAOAsingle.
 Fig4 – First Experiment
 
 Fig4 summarizes results from the first experiment, divided into four classes of solvers.
+
+QAOA-Fig4cg contains results related with enhanced QAOA-based solver.
+
+QAOAur-Fig4dh contains results related with original QAOA-based solver.
+
+VQE-Fig4ae contains results related with enhanced VQE-based solver.
+
+VQEur-Fig4bf contains results related with original VQE-based solver.
 
 Unnumbered .npz files (e.g., QAOA.npz) → accurate results obtained from classical simulations.
 
@@ -207,15 +212,15 @@ These figures report results related to exponential scaling.
 
 Scripts and locations:
 
-QAAsingle.py (folder QAA) → data for enhanced QAA-based solver
+QAAsingle.py (folder QAA-FigS2-S10b) → data for enhanced QAA-based solver
 
-QAAur.py (folder QAAur) → data for original QAA-based solver
+QAAur.py (folder QAAur-FigS2-S10b) → data for original QAA-based solver
 
-QAOAsingle.py (folder QAOA) → data for enhanced QAA-based solver
+QAOAsingle.py (folder QAOA-FigS2-S10c) → data for enhanced QAA-based solver
 
-QAOAur.py (folder QAOAur) → data for original QAOA-based solver
+QAOAur.py (folder QAOAur-FigS2-S10c) → data for original QAOA-based solver
 
-uniclassical.py (folder classical) → data for classical solvers and  enhanced VQE-based solver.
+uniclassical.py (folder classical-FigS2-S10a) → data for classical solvers and  enhanced VQE-based solver.
 
 FigS12 – Barren Plateau Verification
 
