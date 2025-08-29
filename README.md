@@ -1,4 +1,4 @@
-1. System Requirements
+1. **System Requirements**
 
 Software Dependencies:
 
