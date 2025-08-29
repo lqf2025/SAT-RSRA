@@ -66,7 +66,7 @@ Versions the software has been tested on:
 
 While other versions of these libraries may also work, these are the versions the software has been explicitly tested with.
 
-2. Installation Guide
+2. **Installation Guide**
 
 Step 1: Clone the Repository
 
@@ -131,7 +131,7 @@ On a typical desktop computer , and a stable internet connection, the installati
 
 This means the total time to complete the setup should be around 10–15 minutes on a "normal" desktop computer.
 
-3. Project Structure and Usage
+3. **Project Structure and Usage**
 
 The project folder is organized into five main parts, each corresponding to the generation of one or more figures in the main text or supplementary information.
 
@@ -181,6 +181,8 @@ Fig4 – First Experiment
 
 Fig4 summarizes results from the first experiment, divided into four classes of solvers.
 
+Results:
+
 •QAOA-Fig4cg contains results related with enhanced QAOA-based solver.
 
 •QAOAur-Fig4dh contains results related with original QAOA-based solver.
@@ -208,23 +210,25 @@ FigS2–S10 – Exponential Scaling
 
 These figures report results related to exponential scaling.
 
-Scripts and locations:
+Scripts and outputs:
 
-•QAAsingle.py (folder QAA-FigS2-S10b) → data for enhanced QAA-based solver
+•QAAsingle.py (folder QAA-FigS2-S10b) → data for enhanced QAA-based solver (QAAsinglellXX.npz)
 
-•QAAur.py (folder QAAur-FigS2-S10b) → data for original QAA-based solver
+•QAAur.py (folder QAAur-FigS2-S10b) → data for original QAA-based solver (QAAscaleurXX.npz)
 
-•QAOAsingle.py (folder QAOA-FigS2-S10c) → data for enhanced QAA-based solver
+•QAOAsingle.py (folder QAOA-FigS2-S10c) → data for enhanced QAA-based solver (QAOAsingleXX.npz)
 
-•QAOAur.py (folder QAOAur-FigS2-S10c) → data for original QAOA-based solver
+•QAOAur.py (folder QAOAur-FigS2-S10c) → data for original QAOA-based solver (QAOAurscaleXX.npz)
 
-•uniclassical.py (folder classical-FigS2-S10a) → data for classical solvers and  enhanced VQE-based solver.
+•uniclassical.py (folder classical-FigS2-S10a) → data for classical solvers and  enhanced VQE-based solver (uniXX.npz)
 
 FigS12 – Barren Plateau Verification
 
 Figure S12 presents numerical verification of barren plateau phenomena.
 
-•Script BP.py (folder BP)→ generates average variance under a fixed m/n ratio and various problem sizes.
+Scripts and outputs:
+
+•Script BP.py (folder BP)→ generates average variance under a fixed m/n ratio and various problem sizes (BPXX.npz)
 
 
 
