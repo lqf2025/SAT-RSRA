@@ -122,11 +122,11 @@ Typical Install Time on a Normal Desktop Computer
 
 On a typical desktop computer , and a stable internet connection, the installation should take approximately 10–15 minutes:
 
--Cloning the repository: ~1-2 minutes.
+•Cloning the repository: ~1-2 minutes.
 
--Setting up the virtual environment: ~1 minute.
+•Setting up the virtual environment: ~1 minute.
 
--Installing dependencies: ~5-10 minutes, depending on internet speed and the number of packages.
+•Installing dependencies: ~5-10 minutes, depending on internet speed and the number of packages.
 
 
 This means the total time to complete the setup should be around 10–15 minutes on a "normal" desktop computer.
