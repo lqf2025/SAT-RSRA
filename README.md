@@ -25,6 +25,7 @@ You can install all dependencies using the following command:
 pip install -r requirements.txt
 
 Where requirements.txt contains:
+
 numpy>=1.24
 
 scipy>=1.10
@@ -143,7 +144,7 @@ The remaining folders contain the evaluation codes and data required for generat
 
 generator.py, is used to generate random positive 3-SAT instances, which occurs multiple times. After generation, it applies our reduction algorithm to produce the matrix L.
 
-Because many of the calculations are extremely time-consuming and repetitive, several scripts need to be run multiple times with varying parameters (e.g., different m/n ratios and numbers of repetitions).
+Because many of the calculations are extremely time-consuming and repetitive, several scripts must be run multiple times with varying parameters (e.g., different m/n ratios and numbers of repetitions). We recommend implementing the codes on a server in parallel mode.
 
 
 Figure Descriptions and Related Files
@@ -177,7 +178,7 @@ QAAp.py outputs: QAAscale0.npz – QAAscale4.npz
 
 QAOAp.py outputs: results stored in the folder QAOAsingle.
 
-!!QAOAp.py can be extremely time-consuming.
+!! QAOAp.py can be extremely time-consuming.
 
 Fig4 – First Experiment
 
