@@ -5,19 +5,19 @@ Software Dependencies:
 
 To run this, you will need Python 3.12.7 and the following Python libraries:
 
--NumPy (version 1.24+)
+•NumPy (version 1.24+)
 
--SciPy (version 1.10+)
+•SciPy (version 1.10+)
 
--Matplotlib (version 3.7+)
+•Matplotlib (version 3.7+)
 
--Parfor (version 1.0+)
+•Parfor (version 1.0+)
 
--PySAT (version 0.9+)
+•PySAT (version 0.9+)
 
--Random (standard Python library, no installation required)
+•Random (standard Python library, no installation required)
 
--Math (standard Python library, no installation required)
+•Math (standard Python library, no installation required)
 
 
 You can install all dependencies using the following command:
@@ -41,27 +41,27 @@ Operating Systems:
 
 The software is compatible with the following operating systems:
 
--Windows: 10 and 11 (64-bit)
+•Windows: 10 and 11 (64-bit)
 
--macOS: 10.15+ (64-bit)
+•macOS: 10.15+ (64-bit)
 
--Linux: Ubuntu 20.04+ (64-bit) or other distributions with Python 3.12.7 or higher.
+•Linux: Ubuntu 20.04+ (64-bit) or other distributions with Python 3.12.7 or higher.
 
 
 Versions the software has been tested on:
 
 
--Python: 3.12.7
+•Python: 3.12.7
 
--NumPy (version 1.26.4)
+•NumPy (version 1.26.4)
 
--SciPy (version 1.11.4)
+•SciPy (version 1.11.4)
 
--Matplotlib (version  3.10.1)
+•Matplotlib (version  3.10.1)
 
--Parfor (version 2025.1.0)
+•Parfor (version 2025.1.0)
 
-python-sat  (version 1.8.dev14)
+•python-sat  (version 1.8.dev14)
 
 
 While other versions of these libraries may also work, these are the versions the software has been explicitly tested with.
@@ -108,15 +108,15 @@ pip list
 
 This will display a list of installed packages and their versions. You should see the following (or similar) packages in the list:
 
--numpy (version 1.24+)
+•numpy (version 1.24+)
 
--scipy (version 1.10+)
+•scipy (version 1.10+)
 
--matplotlib (version 3.7+)
+•matplotlib (version 3.7+)
 
--parfor (version 1.0+)
+•parfor (version 1.0+)
 
--pysat (version 0.9+)
+•pysat (version 0.9+)
 
 Typical Install Time on a Normal Desktop Computer
 
@@ -159,17 +159,17 @@ Determination of the necessary number of layers
 
 Scripts and outputs:
 
--reductionability.py (folder reduction-Fig2abh)→ generates reduction.npz in the reduction folder.
+•reductionability.py (folder reduction-Fig2abh)→ generates reduction.npz in the reduction folder.
 
--QAA.py and QAOA.py (folder QAAQAOA-Fig2de) → simulate QAA- and QAOA-based solvers for case stored in PQC100,63.npz.
+•QAA.py and QAOA.py (folder QAAQAOA-Fig2de) → simulate QAA- and QAOA-based solvers for case stored in PQC100,63.npz.
 
--VQE.py and VQEcount.py (folder VQE-Fig2c) → simulate VQE-based solvers for case stored in PQC150,94.npz.
+•VQE.py and VQEcount.py (folder VQE-Fig2c) → simulate VQE-based solvers for case stored in PQC150,94.npz.
 
--VQE.py generates successful and failed attempts.
+•VQE.py generates successful and failed attempts.
 
--VQEcount.py calculates the probability of success.
+•VQEcount.py calculates the probability of success.
 
--QAAp.py and QAOAp.py (folder pdeterminate-Fig2fg) → evaluate scaling performance under varying numbers of layers.
+•QAAp.py and QAOAp.py (folder pdeterminate-Fig2fg) → evaluate scaling performance under varying numbers of layers.
 
 QAAp.py outputs: QAAscale0.npz – QAAscale4.npz
 
@@ -181,13 +181,13 @@ Fig4 – First Experiment
 
 Fig4 summarizes results from the first experiment, divided into four classes of solvers.
 
--QAOA-Fig4cg contains results related with enhanced QAOA-based solver.
+•QAOA-Fig4cg contains results related with enhanced QAOA-based solver.
 
--QAOAur-Fig4dh contains results related with original QAOA-based solver.
+•QAOAur-Fig4dh contains results related with original QAOA-based solver.
 
--VQE-Fig4ae contains results related with enhanced VQE-based solver.
+•VQE-Fig4ae contains results related with enhanced VQE-based solver.
 
--VQEur-Fig4bf contains results related with original VQE-based solver.
+•VQEur-Fig4bf contains results related with original VQE-based solver.
 
 Unnumbered .npz files (e.g., QAOA.npz) → accurate results obtained from classical simulations.
 
@@ -197,11 +197,11 @@ Fig5 – Second Experiment
 
 Fig5 summarizes results from the second experiment.
 
--Generated cases: case folder
+•Generated cases: case folder
 
--Original data: originaldata folder
+•Original data: originaldata folder
 
--Summary: Exp2.xlsx
+•Summary: Exp2.xlsx
 
 
 FigS2–S10 – Exponential Scaling
@@ -210,21 +210,21 @@ These figures report results related to exponential scaling.
 
 Scripts and locations:
 
--QAAsingle.py (folder QAA-FigS2-S10b) → data for enhanced QAA-based solver
+•QAAsingle.py (folder QAA-FigS2-S10b) → data for enhanced QAA-based solver
 
--QAAur.py (folder QAAur-FigS2-S10b) → data for original QAA-based solver
+•QAAur.py (folder QAAur-FigS2-S10b) → data for original QAA-based solver
 
--QAOAsingle.py (folder QAOA-FigS2-S10c) → data for enhanced QAA-based solver
+•QAOAsingle.py (folder QAOA-FigS2-S10c) → data for enhanced QAA-based solver
 
--QAOAur.py (folder QAOAur-FigS2-S10c) → data for original QAOA-based solver
+•QAOAur.py (folder QAOAur-FigS2-S10c) → data for original QAOA-based solver
 
--uniclassical.py (folder classical-FigS2-S10a) → data for classical solvers and  enhanced VQE-based solver.
+•uniclassical.py (folder classical-FigS2-S10a) → data for classical solvers and  enhanced VQE-based solver.
 
 FigS12 – Barren Plateau Verification
 
 Figure S12 presents numerical verification of barren plateau phenomena.
 
--Script BP.py (folder BP)→ generates average variance under a fixed m/n ratio and various problem sizes.
+•Script BP.py (folder BP)→ generates average variance under a fixed m/n ratio and various problem sizes.
 
 
 
