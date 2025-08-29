@@ -50,7 +50,6 @@ Linux: Ubuntu 20.04+ (64-bit) or other distributions with Python 3.12.7 or highe
 
 Versions the Software Has Been Tested On:
 
-The software has been tested on the following versions:
 
 Python: 3.12.7
 
