@@ -116,10 +116,8 @@ Covers:
 
 **Scripts and outputs:**
 - `reductionability.py` (folder `reduction-Fig2abh`) 
-
 → evaluates the reduction ability of the RARA, with output  `reduction.npz`.
 - `QAA.py` and `QAOA.py` (folder `QAAQAOA-Fig2de`) 
-
 → simulate enhanced QAA- and QAOA-based solvers for case stored in `PQC100,63.npz`, with output `QAAdraw.npz` and  `QAOAdraw.npz`.
 - `VQE.py` and `VQEcount.py` (folder `VQE-Fig2c`)  → simulate enhanced VQE-based solver for case stored in `PQC150,94.npz`.
   - `VQE.py` → generates successful and failed attempts, with output `VQE.npz`.  
