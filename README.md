@@ -100,8 +100,7 @@ The project folder is organized into five main parts, each corresponding to the 
 - Each folder contains a Python script with the same name as the folder. Running the script directly produces the corresponding figures using pre-computed data.
 - The remaining folders contain the evaluation codes and data required for generating these figures, appending the corresponding image location as a suffix. 
 - `generator.py` is used to generate random positive 3-SAT instances, which occurs multiple times. After generation, it applies our reduction algorithm to produce the matrix **L**.
-- Because many of the calculations are extremely time-consuming and repetitive, several scripts must be run multiple times with varying parameters (e.g., different m/n ratios and numbers of repetitions).  
-  We recommend implementing the codes on a server in **parallel mode**.
+- Because many of the calculations are extremely time-consuming and repetitive, several scripts must be run multiple times with varying parameters (e.g., different m/n ratios and numbers of repetitions).  We recommend implementing the codes on a server in **parallel mode**.
 
 ---
 
@@ -133,13 +132,12 @@ Covers:
 
 Summarizes results from the first experiment, divided into four classes of solvers.
 
-**Results:**
+**Data files:**
 - `QAOA-Fig4cg` → enhanced QAOA-based solver
 - `QAOAur-Fig4dh` → original QAOA-based solver
 - `VQE-Fig4ae` → enhanced VQE-based solver
 - `VQEur-Fig4bf` → original VQE-based solver
 
-**Data files:**
 - Unnumbered `.npz` (e.g., `QAOA.npz`) → accurate results from classical simulations.
 - Numbered `.npz` (e.g., `QAOA1.npz – QAOA5.npz`) → experimental results.
 
@@ -157,22 +155,22 @@ Summarizes results from the second experiment.
 
 ### **FigS2–S10 – Exponential Scaling**
 
-Reports results related to exponential scaling.
+Reports results related to exponential scaling under varying m/n ratios.
 
 **Scripts and outputs:**
-- `QAAsingle.py` (folder `QAA-FigS2-S10b`) → enhanced QAA-based solver (`QAAsinglellXX.npz`)
-- `QAAur.py` (folder `QAAur-FigS2-S10b`) → original QAA-based solver (`QAAscaleurXX.npz`)
-- `QAOAsingle.py` (folder `QAOA-FigS2-S10c`) → enhanced QAOA-based solver (`QAOAsingleXX.npz`)
-- `QAOAur.py` (folder `QAOAur-FigS2-S10c`) → original QAOA-based solver (`QAOAurscaleXX.npz`)
-- `uniclassical.py` (folder `classical-FigS2-S10a`) → classical solvers + enhanced VQE-based solver (`uniXX.npz`)
+- `QAAsingle.py` (folder `QAA-FigS2-S10b`) → scalings of enhanced QAA-based solver, with outputs in the form `QAAsinglellXX.npz`.
+- `QAAur.py` (folder `QAAur-FigS2-S10b`) → scalings of original QAA-based solver, with outputs in the form `QAAscaleurXX.npz`.
+- `QAOAsingle.py` (folder `QAOA-FigS2-S10c`) → scalings of enhanced QAOA-based solver, with outputs in the form `QAOAsingleXX.npz`.
+- `QAOAur.py` (folder `QAOAur-FigS2-S10c`) → scalings of original QAOA-based solver, with outputs in the form `QAOAurscaleXX.npz`.
+- `uniclassical.py` (folder `classical-FigS2-S10a`) → scalings of classical solvers and enhanced VQE-based solver, with outputs in the form `uniXX.npz`.
 
 ---
 
 ### **FigS12 – Barren Plateau Verification**
 
-Numerical verification of barren plateau phenomena.
+Numerical verification of the absence of barren plateau.
 
 **Scripts and outputs:**
-- `BP.py` (folder `BP`) → generates average variance under a fixed m/n ratio and various problem sizes (`BPXX.npz`)
+- `BP.py` (folder `BP`) → calculates average variance under a fixed m/n ratio and various problem sizes, with outputs in the form `BPXX.npz`.
 
 
