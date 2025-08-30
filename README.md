@@ -25,13 +25,13 @@ numpy>=1.24
 scipy>=1.10
 matplotlib>=3.7
 parfor>=1.0
-pysat>=0.9
+python-sat>=0.9
 ```
 
 Alternatively, you can install them manually:
 
 ```bash
-pip install numpy>=1.24 scipy>=1.10 matplotlib>=3.7 parfor>=1.0 pysat>=0.9
+pip install numpy>=1.24 scipy>=1.10 matplotlib>=3.7 parfor>=1.0 python-sat>=0.9
 ```
 
 # 2. Installation Guide
@@ -90,7 +90,7 @@ numpy (version 1.24+)
 scipy (version 1.10+)
 matplotlib (version 3.7+)
 parfor (version 1.0+)
-pysat (version 0.9+)
+python-sat (version 0.9+)
 ```
 
 # 3. Project Structure and Usage
