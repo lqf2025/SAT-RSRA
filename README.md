@@ -27,6 +27,7 @@ matplotlib>=3.7
 parfor>=1.0
 pysat>=0.9
 ```
+```
 
 Alternatively, you can install them manually:
 
@@ -43,6 +44,7 @@ To begin, clone the repository to your local machine. Open a terminal or command
 ```bash
 git clone https://github.com/lqf2025/SAT-RSRA.git
 cd SAT-RSRA
+```
 
 ### Step 2: Set Up a Virtual Environment (Recommended)
 
@@ -53,12 +55,14 @@ It is highly recommended to use a virtual environment to manage the project depe
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
 #### For Windows:
 
 ```bash
-python -m venv venv
+python -m venv Venn
 venv\Scripts\activate
+```
 
 Once activated, you should see (venv) in your terminal or command prompt, indicating that you’re working within the virtual environment.
 
@@ -75,6 +79,7 @@ After installing the dependencies, you can verify that all required packages hav
 
 ```bash
 pip list
+```
 
 This will display a list of installed packages and their versions.
 You should see the following (or similar) packages in the list:
@@ -85,6 +90,7 @@ scipy (version 1.10+)
 matplotlib (version 3.7+)
 parfor (version 1.0+)
 pysat (version 0.9+)
+```
 
 ## 3. Project Structure and Usage
 
