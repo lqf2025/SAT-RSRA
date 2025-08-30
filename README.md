@@ -1,4 +1,4 @@
-# System Requirements
+# 1.System Requirements
 
 ## Software Dependencies
 
@@ -18,7 +18,7 @@ You can install all dependencies using:
 pip install -r requirements.txt
 ```
 
-## `requirements.txt`
+### `requirements.txt`
 
 ```txt
 numpy>=1.24
@@ -35,9 +35,9 @@ Alternatively, you can install them manually:
 pip install numpy>=1.24 scipy>=1.10 matplotlib>=3.7 parfor>=1.0 pysat>=0.9
 ```
 
-## 2. Installation Guide
+# 2. Installation Guide
 
-### Step 1: Clone the Repository
+## Step 1: Clone the Repository
 
 To begin, clone the repository to your local machine. Open a terminal or command prompt and run the following command:
 
@@ -46,7 +46,7 @@ git clone https://github.com/lqf2025/SAT-RSRA.git
 cd SAT-RSRA
 ```
 
-### Step 2: Set Up a Virtual Environment (Recommended)
+## Step 2: Set Up a Virtual Environment (Recommended)
 
 It is highly recommended to use a virtual environment to manage the project dependencies and avoid conflicts with other Python packages on your system.
 
@@ -57,7 +57,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-#### For Windows:
+### For Windows:
 
 ```bash
 python -m venv Venn
@@ -66,14 +66,14 @@ venv\Scripts\activate
 
 Once activated, you should see (venv) in your terminal or command prompt, indicating that you’re working within the virtual environment.
 
-### Step 3: Install Dependencies
+## Step 3: Install Dependencies
 
 Now, install the required Python dependencies using pip. This will ensure that all necessary packages are installed for the software to run correctly.
 
 ```bash
 pip install -r requirements.txt
 
-### Step 4: Verify Installation
+## Step 4: Verify Installation
 
 After installing the dependencies, you can verify that all required packages have been installed correctly by running the following command:
 
@@ -92,7 +92,7 @@ parfor (version 1.0+)
 pysat (version 0.9+)
 ```
 
-## 3. Project Structure and Usage
+# 3. Project Structure and Usage
 
 The project folder is organized into five main parts, each corresponding to the generation of one or more figures in the main text or supplementary information.
 
@@ -104,9 +104,9 @@ The project folder is organized into five main parts, each corresponding to the 
 
 ---
 
-### Figure Descriptions and Related Files
+## Figure Descriptions and Related Files
 
-#### **Fig2 – Classical Simulations**
+### **Fig2 – Classical Simulations**
 
 Covers:
 - Reduction ability
@@ -126,7 +126,7 @@ Covers:
 
 ---
 
-#### **Fig4 – First Experiment**
+### **Fig4 – First Experiment**
 
 Summarizes results from the first experiment, divided into four classes of solvers.
 
@@ -142,7 +142,7 @@ Summarizes results from the first experiment, divided into four classes of solve
 
 ---
 
-#### **Fig5 – Second Experiment**
+### **Fig5 – Second Experiment**
 
 Summarizes results from the second experiment.
 
@@ -152,7 +152,7 @@ Summarizes results from the second experiment.
 
 ---
 
-#### **FigS2–S10 – Exponential Scaling**
+### **FigS2–S10 – Exponential Scaling**
 
 Reports results related to exponential scaling.
 
@@ -165,7 +165,7 @@ Reports results related to exponential scaling.
 
 ---
 
-#### **FigS12 – Barren Plateau Verification**
+### **FigS12 – Barren Plateau Verification**
 
 Numerical verification of barren plateau phenomena.
 
