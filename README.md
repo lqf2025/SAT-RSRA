@@ -59,7 +59,7 @@ source venv/bin/activate
 ### For Windows:
 
 ```bash
-python -m venv Venn
+python -m venv venv
 venv\Scripts\activate
 ```
 
