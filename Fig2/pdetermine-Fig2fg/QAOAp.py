@@ -214,7 +214,7 @@ def slope(n,run):
             mov=-lr1*1/np.sqrt(eposilon+vhat)*(b1*mhat+(1-b1)/(1-b1**(_+1))*gradient)
             guess=guess+mov
         data1[pos]=averageQAOAsuccess(single1,guess,test)
-    np.savez('QAOAsingle/QAOAsingle'+str(n)+' '+str(run)+'.npz',data1=data1)
+    np.savez('QAOAsingle/'+str(n)+'/QAOAsingle'+str(n)+' '+str(run)+'.npz',data1=data1)
 
 
 if __name__ == '__main__':

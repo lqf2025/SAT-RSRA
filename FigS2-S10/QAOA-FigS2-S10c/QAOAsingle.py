@@ -199,11 +199,8 @@ def data(layer,k):
             m,clauses,p2,matrix,c=generatecase(n,k)
             return clauses,p2,matrix,c,calculateenergymatrix(np.shape(p2)[1],clauses,p2),calculatecorrectmatrix(np.shape(p2)[1],clauses,p2),generateenergymatrix(np.shape(matrix)[0],matrix,c),generateenergymatrix2(np.shape(matrix)[0],matrix,c)
         guess=initial(layer)*0.5
-        guess2=initial(layer)*0.25
         garafor=np.zeros((2*layer))#一阶距
         hfor=0#二阶距
-        garafor2=np.zeros((2*layer))#一阶距
-        hfor2=0#二阶距
         for _ in range(epoch):
             print(_)
             E0=averageQAOAsuccess(single0,guess,train)
@@ -215,23 +212,10 @@ def data(layer,k):
             mhat=garafor/(1-b1**(_+1))
             mov=-lr1*1/np.sqrt(eposilon+vhat)*(b1*mhat+(1-b1)/(1-b1**(_+1))*gradient)
             guess=guess+mov
-            #print(guess)
-            #print(np.linalg.norm(mov),np.linalg.norm(gradient))
-            E0=averageQAOAqssuccess(single0,guess2,train)
-            gradient=np.zeros((2*layer))
-            gradient=(np.array(gradientqs(single0,layer,guess2))-E0)/0.001
-            gradient=-gradient
-            garafor2=garafor2*b1+gradient*(1-b1)
-            hfor2=b2*hfor2+(1-b2)*np.linalg.norm(gradient)*np.linalg.norm(gradient)
-            vhat=hfor2/(1-b2**(_+1))
-            mhat=garafor2/(1-b1**(_+1))
-            mov=-lr2*1/np.sqrt(eposilon+vhat)*(b1*mhat+(1-b1)/(1-b1**(_+1))*gradient)
-            guess2=guess2+mov
         finalQAOA=averageQAOAsuccess(single1,guess,test)
-        finalQAOAqs=averageQAOAqssuccess(single1,guess2,test)
         success[n-5]=-np.log(finalQAOA)
-        successqs[n-5]=-np.log(finalQAOAqs)
-    np.savez('QAOAsingle'+str(k)+'.npz',success=success,successqs=successqs)
+        print(success[n-5])
+    np.savez('QAOAsingle'+str(k)+'.npz',success=success)
 
 if __name__ == '__main__':
     epoch=30
