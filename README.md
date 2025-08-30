@@ -128,8 +128,7 @@ You can adjust the trange2 variable (line 119 in QAA.py and line 157 in QAOA.py)
   - `VQEcount.py` → calculates the probability of success, with output `VQEcount0.npz`-`VQEcount5.npz`.
 - `QAAp.py` and `QAOAp.py` (folder `pdeterminate-Fig2fg`) → evaluate scaling performance of enhanced QAA- and QAOA-based solvers under varying numbers of layers.  
   - `QAAp.py` outputs: `QAAscale0.npz – QAAscale4.npz`  
-  - `QAOAp.py` outputs: results stored in folder `QAOAsingle`.  
-  ⚠️ **Note:** `QAOAp.py` can be extremely time-consuming.
+  - `QAOAp.py` outputs: results stored in folder `QAOAsingle`.  ⚠️ **Note:** `QAOAp.py` can be extremely time-consuming.
 
 ---
 
