@@ -115,12 +115,16 @@ Covers:
 - Determination of the necessary number of layers
 
 **Scripts and outputs:**
-- `reductionability.py` (folder `reduction-Fig2abh`) → generates `reduction.npz` in the `reduction` folder.
-- `QAA.py` and `QAOA.py` (folder `QAAQAOA-Fig2de`) → simulate QAA- and QAOA-based solvers for case stored in `PQC100,63.npz`.
-- `VQE.py` and `VQEcount.py` (folder `VQE-Fig2c`)  
-  - `VQE.py` → generates successful and failed attempts.  
-  - `VQEcount.py` → calculates the probability of success (case stored in `PQC150,94.npz`).
-- `QAAp.py` and `QAOAp.py` (folder `pdeterminate-Fig2fg`) → evaluate scaling performance under varying numbers of layers.  
+- `reductionability.py` (folder `reduction-Fig2abh`) 
+
+→ evaluates the reduction ability of the RARA, with output  `reduction.npz`.
+- `QAA.py` and `QAOA.py` (folder `QAAQAOA-Fig2de`) 
+
+→ simulate enhanced QAA- and QAOA-based solvers for case stored in `PQC100,63.npz`, with output `QAAdraw.npz` and  `QAOAdraw.npz`.
+- `VQE.py` and `VQEcount.py` (folder `VQE-Fig2c`)  → simulate enhanced VQE-based solver for case stored in `PQC150,94.npz`.
+  - `VQE.py` → generates successful and failed attempts, with output `VQE.npz`.  
+  - `VQEcount.py` → calculates the probability of success, with output `VQEcount0.npz`-`VQEcount5.npz`.
+- `QAAp.py` and `QAOAp.py` (folder `pdeterminate-Fig2fg`) → evaluate scaling performance of enhanced QAA- and QAOA-based solvers under varying numbers of layers.  
   - `QAAp.py` outputs: `QAAscale0.npz – QAAscale4.npz`  
   - `QAOAp.py` outputs: results stored in folder `QAOAsingle`.  
   ⚠️ **Note:** `QAOAp.py` can be extremely time-consuming.
