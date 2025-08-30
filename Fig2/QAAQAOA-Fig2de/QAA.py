@@ -67,18 +67,6 @@ def calculatecorrectmatrix(dim,clausesin,p2in):#H2矩阵
         else:
             return 0
     return np.array(single)
-def generatecase(n,k):#生成一个有解的问题
-    m=int(np.floor(n*k))
-    if(random.random()<n*k-m):
-        m=m+1
-    while(1):
-        clauses,p2,matrix,c=generator.generaterandom(n,m)
-        dimention=np.shape(p2)[1]#维数
-        print(dimention)
-        m2=calculatecorrectmatrix(dimention,clauses,p2)
-        if(np.max(m2)>0.5):
-            break
-    return m,clauses,p2,matrix,c
 def initial(t):###########################
     #可以加一个参数
     sum=0
@@ -128,7 +116,7 @@ if __name__ == '__main__':
     print(m)
     energylist=[]
     posslist=[]
-    trange2=152
+    trange2=32
     for t in (np.array(range(trange2))+2):
         poss,e=QAAposs(t)
         print(t,poss,e)
