@@ -27,7 +27,6 @@ matplotlib>=3.7
 parfor>=1.0
 pysat>=0.9
 ```
-```
 
 Alternatively, you can install them manually:
 
