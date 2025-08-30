@@ -119,9 +119,11 @@ Covers:
 - `QAA.py` and `QAOA.py` (folder `QAAQAOA-Fig2de`) 
 → simulate enhanced QAA- and QAOA-based solvers for case stored in `PQC100,63.npz`, with output `QAAdraw.npz` and  `QAOAdraw.npz`.
 You can adjust the trange2 variable (line 119 in QAA.py and line 157 in QAOA.py), which controls the maximum number of layers for both solvers. 
+
 ⭐These scripts serve as demos for the two solvers. In our setup, we set trange2 in QAA.py to 32 and in QAOA.py to 1, allowing the demo to run on a personal laptop in approximately 10 minutes. For generating the full dataset used in the main text, set trange2 in QAA.py to 152 and in QAOA.py to 16.
 - `VQE.py` and `VQEcount.py` (folder `VQE-Fig2c`)  → simulate enhanced VQE-based solver for case stored in `PQC150,94.npz`.
 - `VQE.py` → generates successful and failed attempts, with output `VQE.npz`. 
+
   ⭐This script also serves as a demo for the VQE-based solver. According to the estimation in the main text, the VQE-based solver has an 8.3\% success probability, meaning it is expected to find a solution within approximately 10 minutes.
 - `VQEcount.py` → calculates the probability of success, with output `VQEcount0.npz`-`VQEcount5.npz`.
 - `QAAp.py` and `QAOAp.py` (folder `pdeterminate-Fig2fg`) → evaluate scaling performance of enhanced QAA- and QAOA-based solvers under varying numbers of layers.  
