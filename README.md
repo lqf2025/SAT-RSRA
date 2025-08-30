@@ -71,6 +71,8 @@ Now, install the required Python dependencies using pip. This will ensure that a
 
 ```bash
 pip install -r requirements.txt
+```
+
 
 ## Step 4: Verify Installation
 
