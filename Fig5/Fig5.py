@@ -102,7 +102,7 @@ ax1.set_xlabel(r'$n$')
 ax1.set_ylabel('Success probability')
 ax1.set_xticks(xticks)
 ax1.set_xlim(4.3, final - 0.3)
-ax1.set_title('(a)', x=-0.06, y=0.99, fontsize=18)
+ax1.set_title('a', x=-0.06, y=0.99, fontsize=18)
 ax1.legend(
     fontsize=16, frameon=False, handlelength=3, columnspacing=0.5,
     bbox_to_anchor=(0.75, 0.83), loc='center'
@@ -116,7 +116,7 @@ ax2.set_xlabel(r'$n$')
 ax2.set_ylabel('Energy')
 ax2.set_xticks(xticks)
 ax2.set_xlim(4.3, final - 0.3)
-ax2.set_title('(b)', x=-0.06, y=0.99, fontsize=18)
+ax2.set_title('b', x=-0.06, y=0.99, fontsize=18)
 ax2.legend(
     fontsize=16, frameon=False, handlelength=3, columnspacing=0.5,
     bbox_to_anchor=(0.22, 0.83), loc='center'
