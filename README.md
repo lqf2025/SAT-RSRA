@@ -230,3 +230,9 @@ Numerical verification of the absence of barren plateau.
 - `BP.py` (folder `BP`) → calculates average variance under a fixed m/n ratio and various problem sizes, with outputs in the form `BPXX.npz`. 
 
 
+
+## License
+
+This code is released under the MIT License. See the `LICENSE` file for details.
+
+

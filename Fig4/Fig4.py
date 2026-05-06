@@ -216,7 +216,7 @@ def plot_state_box_panel(
     setup_subplot(ax, panel_label)
 
     ax.text(
-        0.65, 0.96, method_label,
+        0.65, 0.95, method_label,
         fontsize=16,
         transform=ax.transAxes,
         ha='center',
