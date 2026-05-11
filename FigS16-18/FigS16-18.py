@@ -269,7 +269,7 @@ def plot_mix_three_panel(out_pdf, cdcl_file, qaa_file, qaoa_file, k, TYPE="O"):
     draw_qaa_panel(
         ax_b,
         qaa_file=qaa_file,
-        title_tex=rf"QAA Mix, $m/n={k}$",
+        title_tex=rf"QAA Mix, $\epsilon={k}$",
         color=g[0], marker=g[3]
     )
     ax_b.set_yscale("log")
@@ -283,7 +283,7 @@ def plot_mix_three_panel(out_pdf, cdcl_file, qaa_file, qaoa_file, k, TYPE="O"):
     draw_qaoa_panel(
         ax_c,
         qaoa_file=qaoa_file,
-        title_tex=rf"QAOA Mix, $m/n={k}$",
+        title_tex=rf"QAOA Mix, $\epsilon={k}$",
         color=g[1], marker=g[4]
     )
     ax_c.set_yscale("log")
